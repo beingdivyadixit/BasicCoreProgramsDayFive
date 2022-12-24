@@ -6,7 +6,7 @@ namespace BasicCoreProgramsDayFive
     {
         static void Main(string[] args)
         { 
-            Console.WriteLine(" Press 1 for Flip Coin and print percentage of Heads and Tails Program \n Press 2 for Leap Year Program \n Press 3 for Power of 2 \n Press 4 for Harmonic number program \n Press 5 for Prime Factor Program \n Press 6 for Quotient Remainder \n Press 7 for swap two numbers program \n Press 8 for Even or Odd Number Program \n Press 9 for Vowel Or Consonant Program");
+            Console.WriteLine(" Press 1 For Flip Coin and print percentage of Heads and Tails Program \n Press 2 For Leap Year Program \n Press 3 For Power of 2 \n Press 4 For Harmonic number program \n Press 5 For Prime Factor Program \n Press 6 For Quotient Remainder \n Press 7 For swap two numbers program \n Press 8 For Even or Odd Number Program \n Press 9 For Vowel Or Consonant Program \n Press 10 For Largest Among Three Numbers Program");
             int option = Convert.ToInt32(Console.ReadLine()); //storing  input given by user to choose program
             switch (option) // switch case for diffrent programs
             {
@@ -74,6 +74,17 @@ namespace BasicCoreProgramsDayFive
                         Console.WriteLine(" Enter the word");
                         String Input = Console.ReadLine();
                         vowelOrConsonant.consonantOrVowel(Input);
+                    }
+                    break;
+                case 10:
+                    {   //Taking user input
+                        Console.WriteLine("Enter first number");
+                        int Number1 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter second number");
+                        int Number2 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter third number");
+                        int Number3 = Convert.ToInt32(Console.ReadLine());
+                        largestAmongThreeNumbers.largestBetweenThreeNumbers(Number1, Number2, Number3);
                     }
                     break;
                 default:

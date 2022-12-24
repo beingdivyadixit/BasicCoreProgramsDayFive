@@ -5,8 +5,8 @@ namespace BasicCoreProgramsDayFive
     internal class Program
     {
         static void Main(string[] args)
-        {
-            Console.WriteLine(" Press 1 for Flip Coin and print percentage of Heads and Tails Program \n Press 2 for Leap Year Program \n Press 3 for Power of 2 ");
+        { 
+            Console.WriteLine(" Press 1 for Flip Coin and print percentage of Heads and Tails Program \n Press 2 for Leap Year Program \n Press 3 for Power of 2 \n Press 3 for Harmonic number program ");
             int option = Convert.ToInt32(Console.ReadLine()); //storing  input given by user to choose program
             switch (option) // switch case for diffrent programs
             {
@@ -28,6 +28,13 @@ namespace BasicCoreProgramsDayFive
                         Console.WriteLine("Enter the number till you want power of two");
                         int Number = Convert.ToInt32(Console.ReadLine());
                         powerOfTwo.powOfTwo(Number);
+                    }
+                    break;
+                case 4:
+                    {
+                        Console.WriteLine("Enter the number till want harmonic number");
+                        int Number = Convert.ToInt32(Console.ReadLine());
+                        harmonicNumber.numberHarmonic(Number);
                     }
                     break;
                 default:

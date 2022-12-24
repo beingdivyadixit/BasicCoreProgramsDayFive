@@ -6,7 +6,7 @@ namespace BasicCoreProgramsDayFive
     {
         static void Main(string[] args)
         { 
-            Console.WriteLine(" Press 1 for Flip Coin and print percentage of Heads and Tails Program \n Press 2 for Leap Year Program \n Press 3 for Power of 2 \n Press 4 for Harmonic number program \n Press 5 for Prime Factor Program");
+            Console.WriteLine(" Press 1 for Flip Coin and print percentage of Heads and Tails Program \n Press 2 for Leap Year Program \n Press 3 for Power of 2 \n Press 4 for Harmonic number program \n Press 5 for Prime Factor Program \n Press 6 for Quotient Remainder");
             int option = Convert.ToInt32(Console.ReadLine()); //storing  input given by user to choose program
             switch (option) // switch case for diffrent programs
             {
@@ -42,6 +42,15 @@ namespace BasicCoreProgramsDayFive
                         Console.WriteLine("Enter the number to find prime factor");
                         int Number = Convert.ToInt32(Console.ReadLine());
                         primeFactor.factorPrime(Number);
+                    }
+                    break;
+                case 6:
+                    {
+                        Console.WriteLine("Please enter value for Dividend"); //Taking user input for dividand
+                        int Number1 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Please enter value for Divisor");   //Taking user input for divisor
+                        int Number2 = Convert.ToInt32(Console.ReadLine());
+                        quotientAndRemainder.remainderAndQuotient(Number1, Number2);
                     }
                     break;
                 default:

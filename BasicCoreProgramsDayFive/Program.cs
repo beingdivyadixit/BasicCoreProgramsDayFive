@@ -6,10 +6,9 @@ namespace BasicCoreProgramsDayFive
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(" Welcome to Basic CorePrograms"); //Welcome message
-            Console.WriteLine(" Press 1 for Flip Coin and print percentage of Heads and Tails Program \n Press 2 for Leap Year Program");
+            Console.WriteLine(" Press 1 for Flip Coin and print percentage of Heads and Tails Program \n Press 2 for Leap Year Program \n Press 3 for Power of 2 ");
             int option = Convert.ToInt32(Console.ReadLine()); //storing  input given by user to choose program
-            switch (option)
+            switch (option) // switch case for diffrent programs
             {
                 case 1: // Flip Coin and print percentage of Heads and Tails Program
                     Console.WriteLine("Enter the Number of times you wanted to flip the coin");
@@ -23,6 +22,13 @@ namespace BasicCoreProgramsDayFive
                         leapYear.yearLeap(Year);
                     else
                         Console.WriteLine("Invalid Input");
+                    break;
+                case 3:
+                    {
+                        Console.WriteLine("Enter the number till you want power of two");
+                        int Number = Convert.ToInt32(Console.ReadLine());
+                        powerOfTwo.powOfTwo(Number);
+                    }
                     break;
                 default:
                     Console.WriteLine("Please Select Correct input");

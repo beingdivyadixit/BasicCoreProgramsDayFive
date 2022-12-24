@@ -6,7 +6,7 @@ namespace BasicCoreProgramsDayFive
     {
         static void Main(string[] args)
         { 
-            Console.WriteLine(" Press 1 for Flip Coin and print percentage of Heads and Tails Program \n Press 2 for Leap Year Program \n Press 3 for Power of 2 \n Press 4 for Harmonic number program \n Press 5 for Prime Factor Program \n Press 6 for Quotient Remainder \n Press 7 for swap two numbers program");
+            Console.WriteLine(" Press 1 for Flip Coin and print percentage of Heads and Tails Program \n Press 2 for Leap Year Program \n Press 3 for Power of 2 \n Press 4 for Harmonic number program \n Press 5 for Prime Factor Program \n Press 6 for Quotient Remainder \n Press 7 for swap two numbers program \n Press 8 for Even or Odd Number Program");
             int option = Convert.ToInt32(Console.ReadLine()); //storing  input given by user to choose program
             switch (option) // switch case for diffrent programs
             {
@@ -60,6 +60,13 @@ namespace BasicCoreProgramsDayFive
                         Console.WriteLine("Enter second number");
                         int Number2 = Convert.ToInt32(Console.ReadLine());
                         swapTwoNumbers.swap2Numbers(Number1, Number2);
+                    }
+                    break;
+                case 8:
+                    {
+                        Console.WriteLine("Enter the number to check it's even or odd");
+                        int Number = Convert.ToInt32(Console.ReadLine());
+                        evenOrOdd.oddOrEven(Number);
                     }
                     break;
                 default:

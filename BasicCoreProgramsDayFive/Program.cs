@@ -6,7 +6,7 @@ namespace BasicCoreProgramsDayFive
     {
         static void Main(string[] args)
         { 
-            Console.WriteLine(" Press 1 for Flip Coin and print percentage of Heads and Tails Program \n Press 2 for Leap Year Program \n Press 3 for Power of 2 \n Press 3 for Harmonic number program ");
+            Console.WriteLine(" Press 1 for Flip Coin and print percentage of Heads and Tails Program \n Press 2 for Leap Year Program \n Press 3 for Power of 2 \n Press 4 for Harmonic number program \n Press 5 for Prime Factor Program");
             int option = Convert.ToInt32(Console.ReadLine()); //storing  input given by user to choose program
             switch (option) // switch case for diffrent programs
             {
@@ -35,6 +35,13 @@ namespace BasicCoreProgramsDayFive
                         Console.WriteLine("Enter the number till want harmonic number");
                         int Number = Convert.ToInt32(Console.ReadLine());
                         harmonicNumber.numberHarmonic(Number);
+                    }
+                    break;
+                case 5:
+                    {
+                        Console.WriteLine("Enter the number to find prime factor");
+                        int Number = Convert.ToInt32(Console.ReadLine());
+                        primeFactor.factorPrime(Number);
                     }
                     break;
                 default:
